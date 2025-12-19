@@ -1,13 +1,14 @@
-"use client"
+"use client";
 
 import { LockIcon } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react"
+import { useState } from "react";
 
 const Sidebar = () => {
   const [showProjects, setShowProjects] = useState(true);
   const [showPriority, setShowPriority] = useState(true);
-  const sidebarClassNames = 'fixed flex flex-col h-[100%] justify-between shadow-xl transition-all duration-300 h-full z-40 dark:bg-black overflow-y-auto bg-white w-64'
+  const sidebarClassNames =
+    "fixed flex flex-col h-[100%] justify-between shadow-xl transition-all duration-300 h-full z-40 dark:bg-black overflow-y-auto bg-white w-64";
 
   return (
     <div className={sidebarClassNames}>
@@ -31,7 +32,7 @@ const Sidebar = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
